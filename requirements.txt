@@ -1,0 +1,5 @@
+crewai
+transformer
+accelerate
+torch
+pysqlite3-binary
