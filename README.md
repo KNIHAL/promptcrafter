@@ -17,5 +17,5 @@ git clone https://github.com/KNIHAL/promptcrafter.git
 cd promptcrafter
 pip install -e .
 promptcrafter
-```  ← This is important!
+```  
 
