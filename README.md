@@ -13,7 +13,7 @@ A modular, multi-agent LLM system that crafts, tests, and evaluates the best pro
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/promptcrafter.git
+git clone https://github.com/KNIHAL/promptcrafter.git
 cd promptcrafter
 
 
