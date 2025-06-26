@@ -9,13 +9,11 @@ A modular, multi-agent LLM system that crafts, tests, and evaluates the best pro
 - 🧠 Prompt Evaluator Agent
 - 📝 Final Report Agent
 - 🛠️ Local + Cloud LLM Support (Ollama, OpenAI)
-- 📦 Installable via `pip install -e .`
 
 ## 🚀 Quick Start
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/promptcrafter.git
 cd promptcrafter
-pip install -e .
-promptcrafter
+
 

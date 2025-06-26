@@ -2,8 +2,8 @@ crewai
 transformer
 accelerate
 torch
-pysqlite3-binary
 python-dotenv
-langchain-OpenAI
+OpenAI
 langchain
-langchain-community
+pydantic
+
