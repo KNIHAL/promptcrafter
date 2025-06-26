@@ -15,5 +15,7 @@ A modular, multi-agent LLM system that crafts, tests, and evaluates the best pro
 ```bash
 git clone https://github.com/KNIHAL/promptcrafter.git
 cd promptcrafter
-
+pip install -e .
+promptcrafter
+```  ← This is important!
 
