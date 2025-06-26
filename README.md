@@ -1,7 +1,21 @@
-<<<<<<< HEAD
-# promptcrafter
-=======
-# promptcrafter
+# 🧪 PromptCrafter V2
 
-## It's a prompting agent, you can use this to generate a prompt for you purpose.
->>>>>>> fcc2a04 (to check the code)
+A modular, multi-agent LLM system that crafts, tests, and evaluates the best prompts for any task — powered by CrewAI, LangChain, and Ollama.
+
+## ✨ Features
+
+- 🔧 Prompt Generator Agent
+- 🧪 Prompt Tester Agent
+- 🧠 Prompt Evaluator Agent
+- 📝 Final Report Agent
+- 🛠️ Local + Cloud LLM Support (Ollama, OpenAI)
+- 📦 Installable via `pip install -e .`
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/YOUR_USERNAME/promptcrafter.git
+cd promptcrafter
+pip install -e .
+promptcrafter
+

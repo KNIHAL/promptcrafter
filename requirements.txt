@@ -3,3 +3,7 @@ transformer
 accelerate
 torch
 pysqlite3-binary
+python-dotenv
+langchain-OpenAI
+langchain
+langchain-community

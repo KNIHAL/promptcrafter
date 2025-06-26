@@ -1,19 +1,11 @@
-from crewai import Crew
-from agents.prompt_builder_agent import prompt_builder
-from agents.prompt_tester_agent import prompt_tester
+from crewai import Crew, Process
+from agents import promptGenerator, promptTester, promptEvaluator, reportGenerator
+from tasks import crafting_task, evaluating_task, reporting_task, testing_task
 
-from tasks.prompt_builder_task import create_generate_prompt_task
-from tasks.prompt_tester_task import create_evaluate_prompt_task
-
-def run_prompt_pipeline(user_goal: str):
-    generate_task = create_generate_prompt_task(user_goal)
-    evaluate_task = create_evaluate_prompt_task(user_goal)
-
-    crew = Crew(
-        agents=[prompt_builder, prompt_tester],
-        tasks=[generate_task, evaluate_task],
-        verbose=True
+def crew():
+    return Crew(
+        agents=['promptGenerator', 'promptTester', 'promptEvaluator', 'reportGenerator']
+        tasks=['crafting_task', 'evaluating_task', 'reporting_task', 'testing_task']
+        verbose=True,
+        process=Process.sequential
     )
-
-    result = crew.kickoff()
-    return result
