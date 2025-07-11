@@ -1,7 +1,7 @@
 # This is the cloud LLM API key config file. USe according to your interest.
 from dotenv import load_dotenv
 import os
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 
 load_dotenv()
 
@@ -11,5 +11,5 @@ llm = ChatOpenAI(
     max_tokens=None,
     timeout=None,
     max_retries=2,
-    api_key=os.getenv("OPENAI_API_KEY")
+    api_key=os.getenv("Groq_API_Key")
 )

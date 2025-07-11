@@ -3,7 +3,7 @@ transformer
 accelerate
 torch
 python-dotenv
-OpenAI
+groq
 langchain
 pydantic
 
