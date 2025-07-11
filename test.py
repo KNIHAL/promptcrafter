@@ -1,8 +1,7 @@
-# test_groq.py
-import os
-from groq import Groq # Make sure you have 'groq' library installed: pip install groq
 
-# Ensure your API key is truly in the environment
+import os
+from groq import Groq 
+
 groq_api_key = os.getenv("GROQ_API_KEY")
 if not groq_api_key:
     print("Error: GROQ_API_KEY environment variable not set.")
@@ -20,7 +19,7 @@ try:
         ],
         model="llama3-8b-8192",
         temperature=0.7,
-        max_tokens=50, # Set a small max_tokens for a quick test
+        max_tokens=50, 
     )
     print("Groq API call successful!")
     print(chat_completion.choices[0].message.content)
