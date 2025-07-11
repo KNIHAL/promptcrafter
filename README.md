@@ -1,6 +1,6 @@
-# 🧪 PromptCrafter V2
+# 🧪 PromptCrafter 
 
-A modular, multi-agent LLM system that crafts, tests, and evaluates the best prompts for any task — powered by CrewAI, LangChain, and Ollama.
+A modular, multi-agent LLM system that crafts, tests, and evaluates the best prompts for any task — powered by CrewAI, LangChain, and Groq.
 
 ## ✨ Features
 
@@ -8,14 +8,13 @@ A modular, multi-agent LLM system that crafts, tests, and evaluates the best pro
 - 🧪 Prompt Tester Agent
 - 🧠 Prompt Evaluator Agent
 - 📝 Final Report Agent
-- 🛠️ Local + Cloud LLM Support (Ollama, OpenAI)
+
 
 ## 🚀 Quick Start
 
 ```bash
 git clone https://github.com/KNIHAL/promptcrafter.git
 cd promptcrafter
-pip install -e .
-promptcrafter
+pip install -r requirements.txt
 ```  
 
