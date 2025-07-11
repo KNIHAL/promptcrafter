@@ -1,6 +1,6 @@
 from crewai import Agent
-from llm.local_llm import llama3_llm # If you don't have api key, use this llm.
-# from llm.cloud_llm import llm       "If you have api key, use this."
+#from llm.local_llm import llama3_llm # If you don't have api key, use this llm.
+from llm.cloud_llm import llm       "If you have api key, use this."
 
 def promptEvaluator():
     return Agent(
@@ -12,5 +12,5 @@ def promptEvaluator():
         ),
         verbose=True,
         allow_delegation=False,
-        llm=llama3_llm # or llm=llm
+        llm=llm # or llm=loacl_llm
     )

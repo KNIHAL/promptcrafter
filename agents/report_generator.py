@@ -1,7 +1,7 @@
 from crewai import Agent
 from crewai_tools import FileWriteTool
-from llm.local_llm import llama3_llm # If you don't have api key, use this llm.
-# from llm.cloud_llm import llm       "If you have api key, use this."
+#from llm.local_llm import llama3_llm  # If you don't have api key, use this llm.
+from llm.cloud_llm import llm       "If you have api key, use this."
 
 file_Write=FileWriteTool()
 
@@ -16,5 +16,6 @@ def reportGenerator():
     verbose=True,
     allow_delegation=False,
     tools=[file_Write],
-    llm=llama3_llm # or llm=llm
+    llm=llm
+    #llm=llama3_llm 
     )
